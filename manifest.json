@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Raining?",
   "description": "Learn if it's raining outside.",
-  "version": "1.0",
+  "version": "1.2",
   "icons": { "128": "icon.png" },
   "permissions": [
     "geolocation","tabs", "http://*/*", "https://*/*", "http://rainy-today.appspot.com/*","https://rainy-today.appspot.com/*"

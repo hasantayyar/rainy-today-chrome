@@ -1,5 +1,4 @@
-$(document).ready(function(){
-          function displayError(){}
+    function displayError(){}
       function displayPosition(position) {
         $.post("http://rainy-today.appspot.com",{lat:position.coords.latitude,lon:position.coords.longitude},
           function(data){
@@ -15,10 +14,10 @@ $(document).ready(function(){
               $("#desc").html(desc); 
           })
       }
-      if (navigator.geolocation) {
-        var timeoutVal = 10 * 1000 * 1000;
+if (navigator.geolocation) {
+        var timeoutVal = 10 * 1000;
         navigator.geolocation.getCurrentPosition(
-          displayPosition, 
+          displayPosition,
           displayError,
           { enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
         );
@@ -26,7 +25,6 @@ $(document).ready(function(){
       else {
         alert("Geolocation is not supported by this browser");
       }
-        })
 
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
